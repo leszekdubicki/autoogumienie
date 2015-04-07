@@ -2,9 +2,24 @@
 <html>
     <head>
         <title> Autoogumienie Artur Sekrecki </title>
-
+        <script src="css/jquery-1.11.2.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/jquery.pwstabs-1.2.1.css">
+        <link type="text/css" rel="stylesheet" href="css/agstyle.css">
+        <!--downloaded from https://github.com/alexchizhovcom/pwstabs -->
+        <script src="css/jquery.pwstabs-1.2.1.js"></script>
+        <script src="css/autoogumienie.js"></script>
     </head>
     <body>
-        
+        <div id="topb">
+            <!-- top banner - graphic stuff plus language change-->
+            <img src="img/logo-100-anim.gif">
+        </div>
+
+        <div id="cont">
+            <!-- ACTUAL CONTENT of page -->
+            <div data-pws-tab="homeabout" data-pws-tab-name="About Us">Our second tab</div>
+            <div data-pws-tab="services" data-pws-tab-name="Our Services">Our first tab</div>
+            <div class="mainpagetab" data-pws-tab="contact" data-pws-tab-name="Contact Us">Our third tab</div>
+        </div>
     </body>
 </html>

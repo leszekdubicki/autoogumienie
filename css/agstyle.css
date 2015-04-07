@@ -1,13 +1,13 @@
 /*  sidebar div: */
-#sideb {
-  position: fixed;
+#topb {
   top: 40px;
-  left: 40px;
-  width: 200px;
-  border-right:1px solid #aaa;
+  width: 900px;
+  border-bottom:1px solid #aaa;
+  margin:0 auto;
 }
 
 /*content div*/
-#content {
-  margin: 0 40px 40px 280px;
+#cont {
+  /*margin: 0 40px 40px 280px;*/
+  margin:0 auto;
 }
