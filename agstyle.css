@@ -1,0 +1,18 @@
+/*  sidebar div: */
+#topb {
+  top: 40px;
+  /*width: 900px;*/
+  border-bottom:1px solid #aaa;
+  margin:0 auto;
+}
+
+#cont{
+
+}
+
+/*content div*/
+#all {
+  /*margin: 0 40px 40px 280px;*/
+  width: 900px;
+  margin:0 auto;
+}

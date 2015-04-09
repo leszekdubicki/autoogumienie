@@ -1,18 +1,35 @@
 /*  sidebar div: */
 #topb {
+  position: relative;
   top: 40px;
-  /*width: 900px;*/
-  border-bottom:1px solid #aaa;
+  width: 100%;
+  /*border-bottom:1px solid #aaa;*/
+  height: 120px;
   margin:0 auto;
 }
 
-#cont{
-
+#tyre{
+	float: left;
+	left: 0px;
 }
-
+#oil{
+	position: absolute;
+	top: 0px;
+	left: 600px;
+}
+#cont2{
+	position: absolute;
+	top: 130px;
+	width: 100%;
+}
+#logosign{
+	font-size: 50px;
+}
 /*content div*/
 #all {
   /*margin: 0 40px 40px 280px;*/
+  position: relative;
+  
   width: 900px;
   margin:0 auto;
 }
