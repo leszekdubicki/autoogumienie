@@ -2,12 +2,20 @@
 <html>
     <head>
         <title> Autoogumienie Artur Sekrecki </title>
-        <script src="css/jquery-1.11.2.min.js"></script>
-        <link type="text/css" rel="stylesheet" href="css/jquery.pwstabs-1.2.1.css">
+        <script src="lib/jquery-1.11.2.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="lib/jquery.pwstabs-1.2.1.css">
         <link type="text/css" rel="stylesheet" href="css/agstyle.css">
         <!--downloaded from https://github.com/alexchizhovcom/pwstabs -->
-        <script src="css/jquery.pwstabs-1.2.1.js"></script>
+        <script src="lib/jquery.pwstabs-1.2.1.js"></script>
+		<script src="lib/jquery.marquee.min.js" type="text/javascript"></script>
+		<!--google maps scripts, based on: https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map-->
+		<!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
+		<!--<script src="css/gmaps.js"></script>-->
+		<!--end of gmaps scripts-->
+		
+		<!--my own script file:-->
         <script src="css/autoogumienie.js"></script>
+		
     </head>
     <body>
 	<div id="all">
@@ -19,20 +27,35 @@
             </div>
 			<div id="oil"><img src="img/oil.gif"/></div>
         </div>
-		<div id="cont2">
-        <div id="cont">
-            <!-- ACTUAL CONTENT of page -->
-            <div data-pws-tab="homeabout" data-pws-tab-name="About Us">
-				<h1>Welcome to our web page </h1>
-				<img src="img/view1.jpg"/>
-			</div>
-            <div data-pws-tab="services" data-pws-tab-name="Our Services">Our first tab</div>
-            <div class="mainpagetab" data-pws-tab="contact" data-pws-tab-name="Contact Us">Our third tab</div>
+		<div id="main_container"> <!--inside this div there are pws-tabs placed -->
+			<div id="cont">
+				<!-- ACTUAL CONTENT of page -->
+				<div class="mainpagetab" data-pws-tab="homeabout" data-pws-tab-name="About Us">
+					<h1>Welcome to our web page </h1>
+					<img class="image1" src="img/view1.jpg"/>
+					<div class="empty"><p> fjsalfjslafjsdla</p> </div> <!--empty div-->
+				</div>
+				<div class="mainpagetab" data-pws-tab="services" data-pws-tab-name="Our Services">Our first tab
+					<div id="serv1"> </div>
+				</div>
+				<div class="mainpagetab" data-pws-tab="contact" data-pws-tab-name="Contact Us">Our third tab</div>
+				<div  class="mainpagetab" data-pws-tab="googlemaps" data-pws-tab-name="Google Maps">
+					<div class="mainpagetab">
+					
+						<iframe id="mapframe" scrolling="no"
+						src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=pomorska+141,+szczecin&amp;sll=37.0625,-95.677068&amp;sspn=33.901528,50.625&amp;ie=UTF8&amp;ll=53.395716,14.682627&amp;spn=0.012464,0.024719&amp;z=14&amp;iwloc=addr&amp;output=embed">
+						</iframe>
+					<div id="maplink"> <a target="_blank" href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=pomorska+141,+szczecin&amp;sll=37.0625,-95.677068&amp;sspn=33.901528,50.625&amp;ie=UTF8&amp;ll=53.395716,14.682627&amp;spn=0.012464,0.024719&amp;z=14&amp;iwloc=addr">View Larger Map</a> </div>
+					</div>
+				</div>
         </div>
-    </div>
+		</div>
     <div id="footer">
-        <p>tel. </p>
-    </div>
+		<div id="footerimg"><img src="img/tyre1_50x50.gif"/></div>
+		<div id="marqueecontainer" class="marquee">
+			<p>AUTOOGUMIENIE Artur Sekrecki Tel. +48 91 469 04 57, +48 606 361 228 <a href="mailto:artsek1@tlen.pl"> artsek1@tlen.pl</a></p>		
+		</div>
+	</div>
 	</div>
     </body>
 </html>

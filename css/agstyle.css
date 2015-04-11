@@ -6,6 +6,19 @@ p{
 margin-top: 0px;
 margin-bottom: 5px;
 }
+ul{
+	margin-left: 0px;
+}
+
+/*box containing all page content*/
+#all {
+  /*margin: 0 40px 40px 280px;*/
+  position: relative;
+  
+  width: 900px;
+  margin:0 auto;
+}
+
 /*  banner styles: */
 #topb {
   position: relative;
@@ -47,20 +60,75 @@ margin-bottom: 5px;
 }
 
 
-/*main page elements:*/
-#all {
-  /*margin: 0 40px 40px 280px;*/
-  position: relative;
-  
-  width: 900px;
-  margin:0 auto;
-}
-#cont2{
+/*main page elements styles:*/
+
+#main_container{
 	position: absolute;
 	top: 150px;
 	width: 100%;
-    height: 600px;
+    min-height: 600px;
+	max-height: 650px;
 }
+
+#serv1{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+
+#pws_container{
+	
+}
+
+
+/*end of main styles*/
+
+/*google maps styles:*/
+
+/*not used since I've decided to use iframe to provide a map*/
+#map-canvas {
+        width: 900px;
+        height: 400px;
+      }
+/*_______________________*/
+#mapframe{
+	display: inline-block;
+	width:860px;
+	height:450px;
+	margin-left: 20px;
+	margin-top: 10px;
+	overflow:hidden;
+	
+	
+	/*frameborder:0px;
+	marginheight:"0";
+	marginwidth:"0";*/
+}
+#maplink{
+	display: inline-block;
+	width: 860px;
+	text-align: right;
+}
+/*end of maps styles*/
+	  
+.mainpagetab{
+	position: absolute;
+	width: 900px;
+	left: 0px;
+	height: 500px;
+}
+
+.image1{
+	float: right;
+}
+
+.empty{
+	clear: left;
+}
+
 
 /*footer:*/
 
@@ -68,7 +136,36 @@ margin-bottom: 5px;
     position: fixed;
     width: 900px;
     height: 50px;
-    bottom: 10px;
+    /*bottom: 300px;*/
+	top: 760px;
     background-color: #141311;
-
+	z-index: 1000; /*taken from http://stackoverflow.com/questions/2316015/how-to-make-a-div-appear-in-front-of-regular-text-tables*/
 }
+/*marquee: */
+.marquee {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;     
+  /*border:1px solid #ccc;*/
+}
+/*end of marquee*/
+#marqueecontainer{
+	display: inline-block;
+	line-height: 50px; /*like the footer, to have marquee text in the middle vertically*/
+	text-align: center;
+	width: 50%;
+	margin-left: 175px;
+}
+#footerimg{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+/*end of footer styles*/
