@@ -1,14 +1,25 @@
 /*general elements:*/
+/*Web design project and web page for autoogumienie company
+Author: Leszek Dubicki (student id: x14125439)*/
 body{
-    background-color: #1C1F24;
+    background-color: #dedede
 }
 p{
-margin-top: 0px;
-margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
 }
-ul{
-	margin-left: 0px;
+h4{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 0;
+    line-height: 20px;
 }
+h4.smaller{
+    font-size: 12px;
+}
+
+/*end of general elements*/
 
 /*box containing all page content*/
 #all {
@@ -22,18 +33,19 @@ ul{
 /*  banner styles: */
 #topb {
   position: relative;
-  top: 40px;
+  top: 10px;
   width: 900px;
   /*border-bottom:1px solid #aaa;*/
   height: 120px;
   margin:0 auto;
   text-align: center;
-  background-color: #141311;
+  background-color: #3F343A;
 }
 
 #tyre{
 	float: left;
 	left: 0px;
+    height: 98px;
     border-style: solid;
     border-width: 2px;
     border-color: #686766;
@@ -41,14 +53,19 @@ ul{
 #oil{
 	position: absolute;
 	bottom: 0px;
-    left: 700px;
+    left: 696px;
+    height: 100px;
     border-style: solid;
     border-width: 2px;
     border-color: #686766;
 }
+.logofontcolor{
+    color: #9bd7d5;
+
+}
+
 #logosign{
 	font-size: 40px;
-    color: #686766;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -70,25 +87,70 @@ ul{
 	max-height: 650px;
 }
 
-#serv1{
-	position: absolute;
-	bottom: 10px;
-	left: 10px;
+/*boxes vith services provided*/
+.serv{
+    background-color: #9bd7d5;
+    position: absolute;
 	width: 100px;
 	height: 100px;
-	background-color: red;
+	bottom: 10px;
+    z-index: 999;
+    overflow: hidden;
+}
+.servthumb{
+    float: left;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: #9bd7d5;
+	width: 100px;
+	height: 100px;
+    
+}
+#serv1{
+	left: 10px;
+}
+#serv2{
+	left: 120px;
+}
+#serv3{
+	left: 230px;
+}
+#serv4{
+	left: 340px;
 }
 
-#pws_container{
-	
+.floatleft{
+    float: left;
+    margin-left: 25px;
+}
+/*end of services boxes*/
+
+/*main container - class used by pws-tabs to place itself*/
+#cont{
+	margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #BFBBBB;
 }
 
-
+/*box containing contact data and phone data*/
+#contactdata{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+/*box containing contact form: */
+#contactformcontainer{
+    float: right;
+    margin-right: 20px;
+    height: 90%;
+    margin-top: 20px;
+}
 /*end of main styles*/
 
 /*google maps styles:*/
 
-/*not used since I've decided to use iframe to provide a map*/
+/*map-canvas is not used since I've decided to use iframe to provide a map*/
 #map-canvas {
         width: 900px;
         height: 400px;
@@ -97,9 +159,9 @@ ul{
 #mapframe{
 	display: inline-block;
 	width:860px;
-	height:450px;
+	height: 90%;
 	margin-left: 20px;
-	margin-top: 10px;
+	margin-top: 0px;
 	overflow:hidden;
 	
 	
@@ -116,13 +178,28 @@ ul{
 	  
 .mainpagetab{
 	position: absolute;
+    margin-top: 0px;
+    margin-bottom: 0px;
 	width: 900px;
 	left: 0px;
-	height: 500px;
+	height: 400px;
+    background-color: #BFBBBB;
 }
 
 .image1{
 	float: right;
+}
+.image2{
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.image3{
+    float: bottom;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .empty{
@@ -135,11 +212,25 @@ ul{
 #footer{
     position: fixed;
     width: 900px;
-    height: 50px;
+    height: 30px;
     /*bottom: 300px;*/
-	top: 760px;
-    background-color: #141311;
+	bottom: 20px;
+    /*background-color: #141311;*/
+    background-color: #3F343A;
+    margin-bottom: 0px;
+    margin-top: 0px;
 	z-index: 1000; /*taken from http://stackoverflow.com/questions/2316015/how-to-make-a-div-appear-in-front-of-regular-text-tables*/
+}
+#underfooter{
+    position: fixed;
+    width: 900px;
+    height: 20px;
+    bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+	z-index: 1000;
+    background-color: #dedede
+    
 }
 /*marquee: */
 .marquee {
@@ -152,20 +243,30 @@ ul{
 /*end of marquee*/
 #marqueecontainer{
 	display: inline-block;
-	line-height: 50px; /*like the footer, to have marquee text in the middle vertically*/
+	line-height: 15px; /*like the footer, to have marquee text in the middle vertically*/
 	text-align: center;
 	width: 50%;
-	margin-left: 175px;
+	margin-left: 225px;
 }
-#footerimg{
-	display: inline-block;
-	width: 50px;
-	height: 50px;
+/*container for link to other language version*/
+#languages{
+    /*display: inline-block;*/
+    float: right;
+    height: 100%;
+    bottom: 0px;
+    right: 900px;
 	vertical-align: middle;
 	margin-bottom: 0px;
 	margin-top: 0px;
-	margin-left: 0px;
+	margin-left: 120px;
 	margin-right: 0px;
+}
+
+a.languagelink{
+    color: #9bd7d5;
+}
+a.languagelink:visited{
+    color: #9bd7d5;
 }
 
 /*end of footer styles*/
