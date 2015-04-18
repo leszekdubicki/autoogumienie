@@ -4,9 +4,9 @@
 jQuery(document).ready(function($){
    $('#cont').pwstabs({
 		effect: 'slideleft',
-		conteinerHeight: '600px',
-		horizontalPosition: 'top',
-		verticalPosition: 'left'
+		containerWidth: '900px',
+		tabsPosition: 'horizontal',
+		horizontalPosition: 'top'
    });
    //marquee setup:
 	$('.marquee').marquee({

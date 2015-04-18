@@ -2,7 +2,8 @@
 /*Web design project and web page for autoogumienie company
 Author: Leszek Dubicki (student id: x14125439)*/
 body{
-    background-color: #dedede
+    background-color: #dedede;
+	font-family: 'Oxygen';
 }
 p{
     margin-top: 10px;
@@ -129,6 +130,7 @@ h4.smaller{
 /*main container - class used by pws-tabs to place itself*/
 #cont{
 	margin-top: 0px;
+	width: 900px;
     margin-bottom: 0px;
     background-color: #BFBBBB;
 }
