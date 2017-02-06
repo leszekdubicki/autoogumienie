@@ -92,9 +92,11 @@ h4.smaller{
 .serv{
     background-color: #9bd7d5;
     position: absolute;
+    //position: relative;
 	width: 100px;
 	height: 100px;
-	bottom: 10px;
+	//bottom: 10px;
+    top: 300px;
     z-index: 999;
     overflow: hidden;
 }
@@ -131,6 +133,7 @@ h4.smaller{
 #cont{
 	margin-top: 0px;
 	width: 900px;
+	height: 900px;
     margin-bottom: 0px;
     background-color: #BFBBBB;
 }
@@ -183,8 +186,8 @@ h4.smaller{
     margin-top: 0px;
     margin-bottom: 0px;
 	width: 900px;
+	height: 900px;
 	left: 0px;
-	height: 400px;
     background-color: #BFBBBB;
 }
 
